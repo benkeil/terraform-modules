@@ -37,6 +37,11 @@ variable "billing_mode" {
   description = "Billing mode for the Dynamodb table, can be PROVISIONED or PAY_PER_REQUEST"
 }
 
+variable "prevent_destroy" {
+  description = "should tht table prevent a destroy"
+  default     = true
+}
+
 locals {
   internal_tags = {
     module: "aws_lambda_function"
