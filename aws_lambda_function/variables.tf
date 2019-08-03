@@ -13,7 +13,7 @@ variable "function_name" {
 
 variable "description" {
   description = "description of the lambda"
-  default = ""
+  default     = ""
 }
 
 variable "environment" {
